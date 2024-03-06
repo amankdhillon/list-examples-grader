@@ -18,4 +18,15 @@ public class TestListExamples {
     List<String> expected = Arrays.asList("a", "a", "b", "c", "d");
     assertEquals(expected, merged);
   }
+
+
+  @Test
+  public void testMerges2(){
+    List<String> left = Arrays.asList("a", "b");
+    List<String> right = Arrays.asList("c", "d");
+    List<String> merged = ListExamples.merge(left, right);
+    List<String> expected = Arrays.asList("a", "b", "c", "d");
+    assertEquals(expected, merged);
+  }
+  
 }
